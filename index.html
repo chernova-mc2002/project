@@ -7,50 +7,53 @@
 </head>
 <body>
     <header class="header">
-        <img src="images/logotype.svg" alt="Логотип - Рупор" width="94" height="85">
-    <nav> 
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">История</a></li>
-                <li><a href="#">Разделы</a></li>
-                <li><a href="#">Термины</a></li>
-                <li><a href="#">Ответы</a></li>
-            </ul>
-    </nav>
-        <a href="login.html">Вход</a>
+        <img class="header__logo" src="images/logotype.svg" alt="Логотип - Рупор" width="94" height="85">
+        <nav class="header__menu"> 
+                <ul class="header__list">
+                    <li class="list__element"><a class="menu__link" href="#">Главная</a></li>
+                    <li class="list__element"><a class="menu__link" href="#">История</a></li>
+                    <li class="list__element"><a class="menu__link" href="#">Разделы</a></li>
+                    <li class="list__element"><a class="menu__link" href="#">Термины</a></li>
+                    <li class="list__element"><a class="menu__link" href="#">Ответы</a></li>
+                </ul>
+        </nav>
+        <a class="header__signin" href="login.html">Вход</a>
     </header>
     <main class="main">
-        <section >
-             <div>
-                <p>Есть такая профессия - пробуждать интерес людей к бессмертному наследию, даря знания и эмоции, надолго оставляющие впечатления.</p>
-                <img src="images/tour_guide_sculpture.PNG" alt="Скульптура Гид-экскурсовод" width="376" height="420">
+        <section class="prof">
+             <div class="prof__citate">
+                <p class="prof__text">Есть такая профессия - пробуждать интерес людей к бессмертному наследию, даря знания и эмоции, надолго оставляющие впечатления.</p>
+                
              </div>
-        </section>
-             <ul>
-                <li>
-                    <h3>Бланки документов</h3>
-                    <h3>Учебники</h3>
+             <img class="prof__image" src="images/tour_guide_sculpture.PNG" alt="Скульптура Гид-экскурсовод" width="376" height="420">
+             <ul class="prof__list">
+                <li class="list__element">
+                    <h3 class="list__heading">Бланки документов</h3>
+                    <h3 class="list__heading">Учебники</h3>
+                </li>
+                <li class="list__element">
+                 <h3 class="list__heading">Статьи</h3>
+                 <h3 class="list__heading">Книги</h3>
                 </li>
              </ul>
-        <section>
-             <div>
-                <h2>Стань успешным экскурсоводом вместе с нами!</h2>
-                <img src="images/successful_tour_guide_1.png" alt="Успешный экскурсовод" width="837" height="831">
-             </div>
+        </section>
+        <section class="eks">
+             <h2 class="eks__title">Стань успешным экскурсоводом вместе с нами!</h2>
+            <img class="eks__image" src="images/successful_tour_guide_1.png" alt="Успешный экскурсовод" width="837" height="831">
         </section>
     </main>
-    <footer>
-         <p>Сайт создан Черновой Марией группа МЗ-21</p>
-         <ul>
-         <li><a href="#">Пользовательское соглашение</a></li>
-         <li><a href="#">Политика конфиденциальности</a></li>
+    <footer class="footer">
+         <p class="footer__copyright">Сайт создан Черновой Марией группа МЗ-21</p>
+         <ul class="conditions">
+            <li class="conditions__elem"><a class="elem__text" href="#">Пользовательское соглашение</a></li>
+            <li class="conditions__elem"><a class="elem__text" href="#">Политика конфиденциальности</a></li>
          </ul>
-        <section>
-             <form action="/">
-                <h3>Вход/Регистрация</h3>
-                <input type="tel" name="phone" placeholder="Номер телефона" required>
-                <input type="password" name="password" placeholder="Пароль" required>
-                <button>Войти</button> 
+        <section class="modal__window">
+             <form class="modal__window__form" action="/">
+                <h3 class="modal__window__title">Вход/Регистрация</h3>
+                <input class="modal__window__inpot" type="tel" name="phone" placeholder="Номер телефона" required>
+                <input class="modal__window__inpot" type="password" name="password" placeholder="Пароль" required>
+                <button class="modal__window__button">Войти</button> 
             </form>
         </section>  
     </footer>
