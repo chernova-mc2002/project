@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Успешный экскурсовод</title>
-    <link rel="stylesheet" href="styles/normalize.css>"
-    <link rel="stylesheet" href="styles/style.css"
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header__logo" src="images/logotype.svg" alt="Логотип - Рупор" width="94" height="85">
+    <header class="header container">
+	    <div class="header__logo">
+		    <a class="header__link" href="#">
+                 <img src="images/logotype.svg" alt="Логотип - Рупор" width="94" height="85">
+			</a>
+		</div>
         <nav class="header__menu"> 
                 <ul class="header__list">
                     <li class="list__element"><a class="menu__link" href="#">Главная</a></li>
@@ -19,23 +23,27 @@
                     <li class="list__element"><a class="menu__link" href="#">Ответы</a></li>
                 </ul>
         </nav>
-        <a class="header__signin" href="login.html">Вход</a>
+		<div class="header__signblock">
+            <a class="header__signin" href="login.html">Вход/Регистрация</a>
+		</div>
     </header>
-    <main class="main">
+    <main class="main container">
         <section class="prof">
              <div class="prof__citate">
                 <p class="prof__text">Есть такая профессия - пробуждать интерес людей к бессмертному наследию, даря знания и эмоции, надолго оставляющие впечатления.</p>
                 
              </div>
-             <img class="prof__image" src="images/tour_guide_sculpture.PNG" alt="Скульптура Гид-экскурсовод" width="376" height="420">
+			 <div class="prof__image">
+             <img src="images/tour_guide_sculpture.PNG" alt="Скульптура Гид-экскурсовод" width="376" height="420">
+			 </div>
              <ul class="prof__list">
                 <li class="list__element">
-                    <h3 class="list__heading">Бланки документов</h3>
-                    <h3 class="list__heading">Учебники</h3>
+                    <p class="list__heading"><a href="#">Бланки документов</a></p>
+                    <p class="list__heading"><a href="#">Учебники</a></p>
                 </li>
                 <li class="list__element">
-                 <h3 class="list__heading">Статьи</h3>
-                 <h3 class="list__heading">Книги</h3>
+                 <p class="list__heading"><a href="#">Есть рекомендации по улучшению сайта?</a></p>
+                 <p class="list__heading"><a href="#">Напишите нам</a></p>
                 </li>
              </ul>
         </section>
@@ -44,7 +52,7 @@
             <img class="eks__image" src="images/successful_tour_guide_1.png" alt="Успешный экскурсовод" width="837" height="831">
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
          <p class="footer__copyright">Сайт создан Черновой Марией группа МЗ-21</p>
          <ul class="conditions">
             <li class="conditions__elem"><a class="elem__text" href="#">Пользовательское соглашение</a></li>
