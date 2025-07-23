@@ -1,4 +1,45 @@
-.header{
-background-color: white
-color: blue
+.header {
+background-color: white;
+color: blue;
+ display: flex;
+ justify-content: space-between;
+ padding-top: 20px;
+ padding-bottom: 20px;
+}
+}
+
+.menu__link {
+	color: white;
+}
+
+.menu__link{
+ display: block;
+ padding: 10px;
+ margin: 5px;
+ background-color: #3399ff;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+}
+
+.header__logo {}
+
+.header__signblock {
+padding-top: 20px;
+}
+
+.header__signin {
+ display: inline-block;
+ padding: 10px;
+ margin: 5px;
+ background-color: rgb(95, 103, 110);
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+}
+
+.header__list {
+display:flex;
+list-style:none;
+background-color: #3399ff;
+color: black;
+padding-inline-start: 0px;
 }
