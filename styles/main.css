@@ -1,0 +1,48 @@
+.main {
+    clear: both;
+}
+
+.prof__citate, .prof__image, .prof__list {
+	float: left;
+}
+
+.prof__citate {
+	width: 400px;
+}
+
+.prof__text {
+	text-decoration: underline;
+	text-decoration-color: #3399ff;
+	text-decoration-thickness: 2px;
+	text-decoration-offset: 4px;
+	font-family: Times New Roman;
+	font-size: 24px;
+}
+
+.prof__image img {border: 2px solid black;}
+
+.eks {
+	clear: both;
+padding: 20px;
+}
+
+.eks__title {
+   text-align: center;
+}
+
+.list__element {
+list-style:none;
+background-color: #3399ff;
+color: black;
+padding-inline-start: 0px;
+}
+
+.list__heading a {
+ display: block;
+ padding: 10px;
+ margin: 5px;
+ background-color: #3399ff;
+ color: rgb(255, 255, 255);
+ text-decoration: none;
+ text-align: center;
+}
