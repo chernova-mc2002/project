@@ -6,6 +6,7 @@
     <title>Успешный экскурсовод</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <body>
     <header class="header container">
@@ -16,11 +17,13 @@
 		</div>
         <nav class="header__menu"> 
                 <ul class="header__list">
+                    <!--
                     <li class="list__element"><a class="menu__link" href="#">Главная</a></li>
                     <li class="list__element"><a class="menu__link" href="#">История</a></li>
                     <li class="list__element"><a class="menu__link" href="#">Разделы</a></li>
                     <li class="list__element"><a class="menu__link" href="#">Термины</a></li>
                     <li class="list__element"><a class="menu__link" href="#">Ответы</a></li>
+                -->
                 </ul>
         </nav>
 		<div class="header__signblock">
@@ -47,9 +50,32 @@
                 </li>
              </ul>
         </section>
-        <section class="eks">
-             <h2 class="eks__title">Стань успешным экскурсоводом вместе с нами!</h2>
-            <img class="eks__image" src="images/successful_tour_guide_1.png" alt="Успешный экскурсовод" width="837" height="831">
+        <section class="eks swiper">
+             <h2 class="eks__title">Наши эксперты</h2>
+             <ul class="eks__cards swiper-wrapper">
+                <li class="eks__item swiper-slide">
+                    <img class="eks__image" src="images/successful_tour_guide_1.jpg" alt="Эксперт 1 доп" width="300">
+                    <h3 class="eks__subtitle">Эксперт 1</h3>
+                    <p class="eks__test">Описание эксперта</p>
+                    <button class="eks__button" type="button">Подробнее</button>
+                </li>
+                <li class="eks__item swiper-slide">
+                    <img class="eks__image" src="images/successful_tour_guide_2.jpg" alt="Эксперт 2 доп" width="300">
+                    <h3 class="eks__subtitle">Эксперт 2</h3>
+                    <p class="eks__test">Описание эксперта</p>
+                    <button class="eks__button" type="button">Подробнее</button>
+                </li>
+                <li class="eks__item swiper-slide">
+                    <img class="eks__image" src="images/successful_tour_guide_3.jpg" alt="Эксперт 3 доп" width="300">
+                    <h3 class="eks__subtitle">Эксперт 3</h3>
+                    <p class="eks__test">Описание эксперта</p>
+                    <button class="eks__button" type="button">Подробнее</button>
+                </li>
+             </ul>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            
         </section>
     </main>
     <footer class="footer container">
@@ -61,11 +87,14 @@
         <section class="modal__window">
              <form class="modal__window__form" action="/">
                 <h3 class="modal__window__title">Вход/Регистрация</h3>
-                <input class="modal__window__inpot" type="tel" name="phone" placeholder="Номер телефона" required>
-                <input class="modal__window__inpot" type="password" name="password" placeholder="Пароль" required>
+                <input class="modal__window__input" type="tel" name="phone" placeholder="Номер телефона" required>
+                <input class="modal__window__input" type="password" name="password" placeholder="Пароль" required>
                 <button class="modal__window__button">Войти</button> 
             </form>
         </section>  
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/script.js"></script>
+
 </body>
 </html>
