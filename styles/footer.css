@@ -1,0 +1,11 @@
+.footer {
+    padding: 20px;
+    background-color: #cccccc;
+}
+
+.modal__window__input {
+ transition: outline 0.3s;
+}
+.modal__window__input:focus {
+ outline: 2px solid #218838;
+}

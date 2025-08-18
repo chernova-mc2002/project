@@ -1,11 +1,10 @@
 .header {
-background-color: white;
-color: blue;
- display: flex;
- justify-content: space-between;
- padding-top: 20px;
- padding-bottom: 20px;
-}
+	background-color: white;
+	color: blue;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .menu__link {
@@ -13,33 +12,54 @@ color: blue;
 }
 
 .menu__link{
- display: block;
- padding: 10px;
- margin: 5px;
- background-color: #3399ff;
- color: rgb(255, 255, 255);
- text-decoration: none;
+	display: block;
+	padding: 10px;
+	margin: 5px;
+	background-color: #3399ff;
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.menu__link:hover{
+	background-color: #311885;
+	color: #ffffff;
+}
+
+.menu__link:active{
+	background-color: #851877;
+	color: #ffffff;
 }
 
 .header__logo {}
 
 .header__signblock {
-padding-top: 20px;
+	padding-top: 20px;
 }
 
 .header__signin {
- display: inline-block;
- padding: 10px;
- margin: 5px;
- background-color: rgb(95, 103, 110);
- color: rgb(255, 255, 255);
- text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+	margin: 5px;
+	background-color: rgb(95, 103, 110);
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+}
+
+.header__signin:hover{
+	background-color: #311885;
+	color: #ffffff;
+}
+
+.header__signin:active{
+	background-color: #851877;
+	color: #ffffff;
 }
 
 .header__list {
-display:flex;
-list-style:none;
-background-color: #3399ff;
-color: black;
-padding-inline-start: 0px;
+	display:flex;
+	list-style:none;
+	background-color: #3399ff;
+	color: black;
+	padding-inline-start: 0px;
 }
